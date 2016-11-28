@@ -21,6 +21,8 @@ body {
   padding: 75px 5px 0 0;
 }
 
+
+
 h1 {
   margin: 0;
   padding-top: 20px;
@@ -32,13 +34,19 @@ h3 {
 }
 
 .sectionTitle {
-  padding-left: 20px;
+  padding: 60px 0 20px 15px;
 }
 
 #demoMap {
-  height: 600px;
+  height: 475px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.map {
   width: auto;
 }
+
 
 @media (max-width: 768px) {
 

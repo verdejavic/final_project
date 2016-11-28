@@ -1,4 +1,4 @@
-var mapboxAccessToken =  pk.eyJ1IjoidmVyZGVqYXZpYyIsImEiOiJjaXZvNjV1eWQwMTR5MnpwY2cwc3ZobXN4In0.yNm14IMV2WWg4aQVVrQzHA;
+var mapboxAccessToken =  'pk.eyJ1IjoidmVyZGVqYXZpYyIsImEiOiJjaXZvNjV1eWQwMTR5MnpwY2cwc3ZobXN4In0.yNm14IMV2WWg4aQVVrQzHA';
 
 var map = L.map('demoMap').setView([37.8, -96], 4);
 
@@ -11,7 +11,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='
 L.geoJson(statesData).addTo(map);
 
 
-//irrelevant until map shows
 function getColor(d) {
     return d > 105000 ? '#ffffcc' :
            d > 90000  ? '#c7e9b4' :
