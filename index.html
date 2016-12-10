@@ -4,9 +4,11 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>ASPS Resource</title>
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -24,12 +26,11 @@
 </div>
 
 <!-- nav bar, NEED TO CENTER, CHANGE POSITION TO FIXED -->
-<nav class="navbar navbar-default">
+<nav id="navBar" class="navbar navbar-default">
   <div class="container-fluid">
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#whatisASPS">What is ASPS?</a></li>
-        <li><a href="#history">History</a></li>
         <li><a href="#demographics">Demographics</a></li>
         <li><a href="#clinicaltrials">Clinical Trials</a></li>
       </ul>
@@ -43,11 +44,18 @@
 
 <h1 class="sectionTitle">What is ASPS?</h1>
 
+<div class="text">
+<p>Curtesy of <a href="https://breelynwilkymd.com/">Breelyn Wilky, MD</a> - </p>
+
+<p>"Sarcomas are cancers of bone and soft tissue.  They are rare, only about 1% of all adult cancers, and about 15% of cancers in kids.  About 11000 new cases of soft tissue sarcoma are diagnosed per year in the United States, and about 3000 cases of bone sarcoma.  They can occur anywhere in the body and affect men and women generally about the same.  There are very few risk factors that we know about – for example, there is no association with smoking, obesity, or alcohol.  Very rarely they can be hereditary, or passed down in families.  A few of them occur in an area of the body that has previously been exposed to radiation therapy, or with exposure to specific chemicals, like vinyl chloride.</p>
+
+<p>Sarcomas are usually found when a patient has a lump or bump that is persistent and doesn’t go away, and gets bigger over time.  NOW – before you panic, there are many, many other causes of lumps and bumps, and of course the majority of them are not sarcomas.  Sometimes they are picked up on an xray or scan for another purpose, especially ones that develop in the abdomen or chest.  But most sarcomas tend to occur in an arm or leg, or on the trunk."</p>
+
+<p>Click <a href="https://breelynwilkymd.com/2015/06/07/what-is-a-sarcoma/">here</a> to read more.</div>
+
 <!--history-->
 
-<a name="history"></a>
 
-<h1 class="sectionTitle">History<h1>
 
 <!--cancer demographics-->
 
@@ -55,7 +63,8 @@
 
 <h1 class="sectionTitle">Demographics</h1>
 
-<div class="map"><div id="demoMap"></div></div>
+<div class="map" id="demoMap"></div>
+<script type="text/javascript" src="js/us-states.js"></script>
 
 <!--clinical trials-->
 
@@ -63,7 +72,10 @@
 
 <h1 class="sectionTitle">Clinical Trials</h1>
 
+<div id="trialsMap"></div>
+<script type="text/javascript" src="js/us-states.js"></script>
 
+<script src="js/clinicalTrials.json"></script>
 <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 <script src="js/script.js"></script>
 
