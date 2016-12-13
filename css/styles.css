@@ -21,6 +21,14 @@ body {
   padding: 75px 5px 0 0;
 }
 
+#querymenu {
+  display: none;
+}
+
+#quote {
+  width: 75%;
+}
+
 .text {
   width: 90% auto;
   padding: 0 40px;
@@ -82,7 +90,35 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  h1 h3 {
-    font-size: 75%;
+  #logo {
+    width: 80px;
+  }
+  #headerText {
+    font-size: 80%;
+    float: left;
+  }
+  #navBar {
+    display: none;
+  }
+  #credits {
+    display: none;
+  }
+  blockquote {
+    font-size: 80%;
+  }
+  #quote {
+    width: 100%;
+  }
+  #demoMap {
+    width: 100%;
+  }
+  #trialsMap {
+    width: 100%;
+  }
+  h1, h3 {
+    font-size: 125%;
+  }
+  .sectionTitle {
+    margin-top: -40px;
   }
 }
